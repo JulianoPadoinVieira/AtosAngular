@@ -1,0 +1,17 @@
+
+<div *ngFor="let p of albums let i = index" >
+  <a routerLink="/album" routerLinkActive="selected">
+
+    <h1> {{ p.id }} - {{ p.title }} - {{i + 1}}</h1>
+    <img src="{{ p.thumbnailUrl }}" alt="">
+
+  </a>
+
+</div>
+<pre>
+    {{albums | json}}
+</pre>
+
+<!--<a routerLink="/servico" >componente 4</a>
+  <button id="teste" onclick="ativafuncao(this)">Clicar</button>
+-->

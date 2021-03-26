@@ -1,0 +1,24 @@
+
+<div *ngFor="let l of listas;  let i = index">
+
+    <h1> {{ l.id }} - {{ l.title }} </h1>
+
+    <img src="{{ l.thumbnailUrl }}" alt="">
+
+</div>
+
+
+
+<!--
+  <div *ngFor="let l of listas"  >
+
+    <h1> {{ l.id }} - {{ l.title }} </h1>
+
+    <img src="{{ l.thumbnailUrl }}" alt="">
+
+</div>
+
+<pre>
+    {{listas | json}}
+</pre>
+-->
